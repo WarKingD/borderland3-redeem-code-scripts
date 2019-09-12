@@ -2,13 +2,13 @@
 
 # Usages
 
-1.Open https://borderlands.com/en-US/vip/, login your account.
+1. Open https://borderlands.com/en-US/vip/, login your account.
 
-2.Copy one of script content.
+2. Copy one of script content.
 
-3.Hit F12 open browser devtools, switch to `Console` tab.
+3. Hit F12 open browser devtools, switch to `Console` tab.
  
-4.Paste in to the command line, submit.
+4. Paste in to the command line, submit.
 
 # Credits
 
