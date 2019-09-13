@@ -10,6 +10,7 @@
     const currentSupportColumnLength = 5;
     const currentSupportColumnName = ['code', 'value', 'valid', 'type', 'date'];
     const exportVersion = 1;
+    const exportVarName = 'window.__AUTO_REDEEM_CODE_SCRIPT_DATA';
 
     /**
      * Main
@@ -125,7 +126,11 @@
     {
         const { header, footer } = dumbRemark();
         console.log(header);
-        console.log(JSON.stringify({ meta, data }));
+        let value = JSON.stringify({ meta, data });
+        if (typeof exportVarName !== 'undefined') {
+            value = `${exportVarName} = '${value}'`;
+        }
+        console.log(value);
         console.log(footer);
     }
 

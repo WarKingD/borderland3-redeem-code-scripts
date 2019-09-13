@@ -1,4 +1,4 @@
-window.__AUTO_REDEEM_CODE_SCRIPT_DATA = `*** Please replace me with fetchList data here ***`;
+window.__AUTO_REDEEM_CODE_SCRIPT_DATA = `*** Please replace this line with fetchList codes here ***`;
 
 (async function () {
     // Return value workaround
@@ -7,7 +7,7 @@ window.__AUTO_REDEEM_CODE_SCRIPT_DATA = `*** Please replace me with fetchList da
     /**
      * Configuration, env
      */
-    const version = '0.0.1';
+    const version = '0.0.2';
     const githubUrl = 'https://github.com/WarKingD/borderland3-redeem-code-scripts';
     const redeemCodeUrl = 'https://2kgames.crowdtwist.com/code-redemption-campaign/redeem';
     const importVersion = 1;
@@ -17,7 +17,7 @@ window.__AUTO_REDEEM_CODE_SCRIPT_DATA = `*** Please replace me with fetchList da
      * Main
      */
     console.info(`\n`);
-    console.info(`Auto redeem code script. Version: ${version}.`);
+    console.info(`Auto redeem code script. Version: ${version}, importVersion: ${importVersion}.`);
     console.info(`\n`);
     // Profile - begin
     const _start = new Date;
@@ -127,8 +127,7 @@ window.__AUTO_REDEEM_CODE_SCRIPT_DATA = `*** Please replace me with fetchList da
     }
 
     function _errorList() {
-        console.error('Please replace this script first line that "__AUTO_REDEEM_CODE_SCRIPT_DATA" variable value');
-        console.error('with fetchList.js export list. For example: ');
+        console.error('Please replace this script first line with fetchList.js export list. For example: ');
         console.error('window.__AUTO_REDEEM_CODE_SCRIPT_DATA = `{"meta":{"type":"reddit/code-sheet","version":1},"data":{"list":[{"code":"BL3WELCOME","point":"250","valid":true,"type":"email","date":""}]}}`;');
     }
 
