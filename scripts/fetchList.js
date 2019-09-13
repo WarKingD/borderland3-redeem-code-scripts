@@ -1,4 +1,7 @@
-(function ($) {
+(async function ($) {
+    // Return value workaround
+    await new Promise(resolve => setTimeout(resolve, 0));
+
     /**
      * Configuration, env
      */
