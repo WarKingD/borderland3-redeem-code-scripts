@@ -1,16 +1,20 @@
 # Borderland 3 redeem code scripts
 
+`fetchList.js` convert list for requestRedeem use, `requestRedeem.js` skip invalid codes (include _maybe_ ones) and send redeem code request to bl3 server.
+
 # Usages
 
 ## Export list
 
 1. Open https://old.reddit.com/r/borderlands3/comments/bxgq5p/borderlands_vip_program_codes/
 
-2. Hit F12 open browser devtools, switch to `Console` tab.
+2. Copy `fetchList.js` content.
 
-3. Paste into the command line box, submit.
+3. Hit F12 open browser devtools, switch to `Console` tab.
 
-4. Follow the output guide, copy the codes, maybe save as text file for later use.
+4. Paste into the command line box, submit.
+
+5. Follow the output guide, copy the codes, maybe save as text file for later use.
 
 ## Batch redeem
 
