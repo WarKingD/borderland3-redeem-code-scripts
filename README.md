@@ -18,7 +18,7 @@
 
 2. Open https://2kgames.crowdtwist.com/
 
-3. Copy requestRedeem.js content.
+3. Copy `requestRedeem.js` content.
 
 4. Hit F12 open browser devtools, switch to `Console` tab.
  
@@ -27,6 +27,10 @@ window.__AUTO_REDEEM_CODE_SCRIPT_DATA = '{"meta":{"type":"reddit/code-sheet","ve
 `
 
 6. Submit, result will show in the console.
+
+# Help?
+
+If there's something wrong with my script or bl change something, please submit an issue.
 
 # Credits
 
