@@ -2,16 +2,17 @@
     /**
      * Configuration, env
      */
-    const version = '0.0.1';
+    const version = '0.0.2';
     const githubUrl = 'https://github.com/WarKingD/borderland3-redeem-code-scripts';
-    const currentSupportColumn = 5;
+    const currentSupportColumnLength = 5;
+    const currentSupportColumnName = ['code', 'value', 'valid', 'type', 'date'];
     const exportVersion = 1;
 
     /**
      * Main
      */
     console.info(`\n`);
-    console.info(`Fetch code list script. Version: ${version}.`);
+    console.info(`Fetch code list script. Version: ${version}, exportVersion: ${exportVersion}.`);
     console.info(`\n`);
     // Profile - begin
     const _start = new Date;
@@ -24,7 +25,19 @@
     console.log(`Table head column count: ${headLength}`);
 
     // Verify
-    if (!$headRow[0] || $headRow.children().size() !== currentSupportColumn) {
+    if (!$headRow[0]) {
+        errorOnIncompatible();
+        return;
+    }
+    const $headChildren = $headRow.children();
+    if ($headChildren.size() !== currentSupportColumnLength) {
+        errorOnIncompatible();
+        return;
+    }
+    if (currentSupportColumnName.some((keyword, i) => {
+        const text = $headChildren.eq(i).text().toLowerCase();
+        return !text.includes(keyword)
+    })) {
         errorOnIncompatible();
         return;
     }
@@ -107,8 +120,8 @@
 
     function dumbEncoder(meta, data)
     {
-        const { head, footer } = dumbRemark();
-        console.log(head);
+        const { header, footer } = dumbRemark();
+        console.log(header);
         console.log(JSON.stringify({ meta, data }));
         console.log(footer);
     }
