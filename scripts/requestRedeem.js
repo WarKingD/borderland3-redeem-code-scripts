@@ -1,5 +1,3 @@
-window.__AUTO_REDEEM_CODE_SCRIPT_DATA = `*** Please replace this line with fetchList codes here ***`;
-
 (async function () {
     // Return value workaround
     await new Promise(resolve => setTimeout(resolve, 0));
@@ -127,8 +125,8 @@ window.__AUTO_REDEEM_CODE_SCRIPT_DATA = `*** Please replace this line with fetch
     }
 
     function _errorList() {
-        console.error('Please replace this script first line with fetchList.js export list. For example: ');
-        console.error('window.__AUTO_REDEEM_CODE_SCRIPT_DATA = `{"meta":{"type":"reddit/code-sheet","version":1},"data":{"list":[{"code":"BL3WELCOME","point":"250","valid":true,"type":"email","date":""}]}}`;');
+        console.error('Please add fetchList.js export codes to this script first line. For example: ');
+        console.error('\n1. window.__AUTO_REDEEM_CODE_SCRIPT_DATA = `{"meta":{"type":"reddit/code-sheet","version":1},"data":{"list":[{"code":"BL3WELCOME","point":"250","valid":true,"type":"email","date":""}]}}`;\n\n2. (async function () {\n3.     // Return value workaround\n4.     await new Promise(resolve => setTimeout(resolve, 0));');
     }
 
     function errorOnWrongList() {

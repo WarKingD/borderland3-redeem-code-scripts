@@ -22,7 +22,7 @@
 
 4. Hit F12 open browser devtools, switch to `Console` tab.
  
-5. Paste into the command line box, replace first line value with `fetchList.js` export content. For example:  `
+5. Paste into the command line box, add first line with `fetchList.js` export codes. For example:  `
 window.__AUTO_REDEEM_CODE_SCRIPT_DATA = '{"meta":{"type":"reddit/code-sheet","version":1},"data":{"list":[{"code":"PROFESSORBROMANVIP","point":"200","valid":false,"type":"creator","date":""}]}';
 `
 
