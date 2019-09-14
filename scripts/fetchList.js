@@ -137,12 +137,12 @@
     function errorOnIncompatible() {
         console.error('Your are use incompatible script. Please get new version on github repo.');
         console.error(`${githubUrl}/`);
-        console.error('If there\'s no new version for you, please submit a issue on: ');
-        console.error(`${githubUrl}`);
+        console.error('If there\'s no new version for you, please submit an issue on: ');
+        console.error(`${githubUrl}/issue`);
     }
 
     function errorOnWrongSheet() {
-        console.error('Your are getting wrong code sheet. Please submit a issue on: ');
+        console.error('Your are getting wrong code sheet. Please submit an issue on: ');
         console.error(`${githubUrl}/issue`);
     }
 
